@@ -1,0 +1,11 @@
+.container {
+    height: auto;
+}
+
+.text-bg a {
+    float: right !important;
+}
+
+.upload_form {
+    margin-left: 50%;
+}
