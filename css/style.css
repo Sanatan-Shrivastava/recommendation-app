@@ -1031,6 +1031,7 @@ nav.main-menu {
     text-align: center;
     line-height: 20px;
     font-size: 16px;
+    font-family: 'Poppins';
     display: block;
     font-weight: 500;
     color: #000;
@@ -1273,7 +1274,6 @@ nav.main-menu {
     width: 100%;
     display: inline-block;
     text-align: center;
-    ;
     margin-right: 10px;
 }
 
