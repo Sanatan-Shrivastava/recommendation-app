@@ -1,0 +1,19 @@
+.custom-btn {
+    font-size: 16px;
+    border: #1a1b19 solid 1px;
+    background-color: #1a1b19;
+    color: #fff;
+    padding: 9px 0px;
+    max-width: 171px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.custom-btn:hover {
+    background-color: #ffffff;
+    border: #000000 solid 1px;
+    color: rgb(0, 0, 0);
+}

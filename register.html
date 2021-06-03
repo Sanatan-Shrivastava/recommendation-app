@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Sanatan Shrivastava">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Login | IIIT Kota</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" id="woocommerce-layout-css" href="https://themes.getbootstrap.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.8.1" type="text/css" media="all">
+    <link rel="stylesheet" id="woocommerce-smallscreen-css" href="https://themes.getbootstrap.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.8.1" type="text/css" media="only screen and (max-width: 768px)">
+    <link rel="stylesheet" id="woocommerce-general-css" href="https://themes.getbootstrap.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.8.1" type="text/css" media="all">
+    <script src="./server/swal.js"></script>
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="css/register.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/style.css?ver=1590611604">
+
+</head>
+
+<body class="text-center">
+    <navbar>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img style="width: 2em;" src="./img/logo.png" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./team.html">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a style="padding: 0.7em;" class="custom-btn" href="./profile.html">Login</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </navbar>
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col">
+                <section class="section mb-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="container container--xs">
+                                <div class="woocommerce">
+                                    <div>
+                                        <h4 class="mb-0 text-center">Warden's Details</h4>
+                                        <p class="fs-14 text-gray text-center mb-5">Fill your details to get Registered.
+                                        </p>
+
+
+                                        <form class="register">
+
+                                            <p class="woocommerce-FormRow woocommerce-FormRow--first form-row form-row-first">
+                                                <label for="reg_sr_firstname">First Name <span
+                                                        class="required">*</span></label>
+                                                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_firstname" id="reg_sr_firstname" value="" required="">
+                                                <div class="invalid-feedback">This field is required</div>
+                                            </p>
+
+                                            <p class="woocommerce-FormRow woocommerce-FormRow--last form-row form-row-last">
+                                                <label for="reg_sr_lastname">Last Name <span
+                                                        class="required">*</span></label>
+                                                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_lastname" id="reg_sr_lastname" value="" required="">
+                                                <div class="invalid-feedback">This field is required</div>
+                                            </p>
+
+
+                                            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                                                <label for="reg_email">Email address <span
+                                                        class="required">*</span></label>
+                                                <input type="email" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="email" id="reg_email" value="" required="">
+                                                <div class="invalid-feedback">This field is required</div>
+                                            </p>
+
+                                            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                                                <label for="reg_password">Phone <span
+                                                        class="required">*</span></label>
+                                                <span class="input-group-text" id="basic-addon1">+91 &nbsp;&nbsp;
+                                                <input type="tel" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="password" id="reg_phone" required="">
+                                                </span>
+                                                <div class="invalid-feedback">This field is required</div>
+                                            </p>
+
+                                            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                                                <label for="reg_password">Password <span
+                                                        class="required">*</span></label>
+                                                <input type="password" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="password" id="reg_password" required="">
+                                                <div class="invalid-feedback">This field is required</div>
+                                            </p>
+
+                                            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                                                <label for="reg_password">Confirm Password <span
+                                                        class="required">*</span></label>
+                                                <input type="password" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="password" id="confirm_reg_password" required="">
+                                                <div class="invalid-feedback">This field is required</div>
+                                            </p>
+                                            <!-- Spam Trap -->
+                                            <div style="left: -999em; position: absolute;"><label for="trap">Anti-spam</label><input type="text" name="email_2" id="trap" tabindex="-1" autocomplete="off">
+                                            </div>
+
+                                            <div class="clear"></div>
+                                            <div class="woocommerce-privacy-policy-text"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <!-- Child Details -->
+
+
+
+            <div class="col">
+                <section class="section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="container container--xs">
+                                <div class="woocommerce">
+                                    <div>
+                                        <h4 class="mb-0 text-center">Ward's Details</h4>
+                                        <p class="fs-14 text-gray text-center mb-5">Fill in the details of your ward.
+                                        </p>
+
+
+                                        <form class="register">
+                                            <p class="woocommerce-FormRow woocommerce-FormRow--first form-row form-row-first">
+                                                <label for="reg_child_firstname">First Name <span
+                                                        class="required">*</span></label>
+                                                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_firstname" id="reg_child_firstname" value="" required="">
+                                                <div class="invalid-feedback">This field is required</div>
+                                            </p>
+
+                                            <p class="woocommerce-FormRow woocommerce-FormRow--last form-row form-row-last">
+                                                <label for="reg_child_lastname">Last Name <span
+                                                        class="required">*</span></label>
+                                                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_lastname" id="reg_child_lastname" value="" required="">
+                                                <div class="invalid-feedback">This field is required</div>
+                                            </p>
+
+                                            <p class="woocommerce-FormRow woocommerce-FormRow--first form-row form-row-first">
+                                                <label for="reg_child_firstname">Date Of Birth (DOB)<span
+                                                        class="required">*</span></label>
+                                                <input type="date" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_firstname" id="reg_child_dob" value="" required="">
+                                                <div class="invalid-feedback">This field is required</div>
+                                            </p>
+
+                                            <p class="woocommerce-FormRow woocommerce-FormRow--last form-row form-row-last">
+                                                <label for="reg_child_lastname">Ward's Age<span
+                                                        class="required">*</span></label>
+                                                <input type="number" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_lastname" id="reg_child_age" value="" required="">
+                                                <div class="invalid-feedback">This field is required</div>
+                                            </p>
+
+                                            <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
+                                                <label for="reg_child_lastname">Does your child suffer from any previous ailments? <br> If yes, let us know. <span
+                                                        class="required">*</span></label>
+                                                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_lastname" id="reg_child_ailment" value="" required="">
+                                                <div class="invalid-feedback">This field is required</div>
+                                            </p>
+
+                                            <!-- Spam Trap -->
+                                            <div style="left: -999em; position: absolute;"><label for="trap">Anti-spam</label><input type="text" name="email_2" id="trap" tabindex="-1" autocomplete="off">
+                                            </div>
+                                            <p class="form-row form-row-wide mailchimp-newsletter"><input class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" id="mailchimp_woocommerce_newsletter" type="checkbox" name="mailchimp_woocommerce_newsletter" value="1" checked="checked">
+                                                <label for="mailchimp_woocommerce_newsletter" class="woocommerce-form__label woocommerce-form__label-for-checkbox inline"><span>I agree to all terms and conditions</span></label>
+                                                <div class="invalid-feedback">This field is required</div>
+                                            </p>
+                                            <p class="woocomerce-FormRow form-row">
+                                                <input type="hidden" id="woocommerce-register-nonce" name="woocommerce-register-nonce" value="24bad32be3"><input type="hidden" name="_wp_http_referer" value="/my-account/">
+                                                <center>
+                                                    <p class="text-gray-soft text-center small mb-2">Already have an account? <a href="profile.html">Sign
+                                                            in</a></p>
+                                                    <p class="text-gray-soft text-center small mb-2">By clicking "Sign up" you agree to our <a href="#">Terms of
+                                                            Service</a>.</p>
+                                                    <a style="color: white;" onclick="registerUser()" class="custom-btn mb-4 mt-3">Register</a>
+                                                </center>
+                                            </p>
+                                            <div class="clear"></div>
+                                            <div class="woocommerce-privacy-policy-text"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer class="container py-5">
+        <div class="row">
+            <div style="text-align: left;" class="col-12 col-md">
+                <img class="img-fluid" style="max-width: 100px;" src="img/logo.png">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+                </svg>
+                <small class="d-block mb-3 text-muted">&copy; 2020–21</small>
+            </div>
+            <div style="text-align: left;" class="col-6 col-md">
+                <h5>Links</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="https://iiitkota.ac.in">IIIT Kota</a></li>
+                    <li>
+                        <a class="link-secondary" href="https://github.com/Sanatan-Shrivastava/Detect-Dysgraphia"></a>
+                    </li>
+                    <li><a class="link-secondary" href="git">Collaborate on Dataset</a></li>
+                    <li><a class="link-secondary" href="https://github.com/Sanatan-Shrivastava/detection-dysgraphia">Contribute to
+                            application</a></li>
+                    <li><a class="link-secondary" href="mailto: basant.cse@iiitkota.ac.in">Connect</a></li>
+                </ul>
+            </div>
+            <div style="text-align: left;" class="col-6 col-md">
+                <h5>Social Links</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Twitter</a></li>
+                    <li><a class="link-secondary" href="#">Facebook</a></li>
+                    <li><a class="link-secondary" href="#">Instagram</a></li>
+                    <li><a class="link-secondary" href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div style="text-align: left;" class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="./team.html">Team</a></li>
+                    <li><a class="link-secondary" href="https://github.com/Sanatan-Shrivastava/Detect-Dysgraphia">Github</a></li>
+                    <li><a class="link-secondary" href="#">Privacy</a></li>
+                    <li><a class="link-secondary" href="#">Terms</a></li>
+                </ul>
+            </div>
+            <div style="text-align: left;" class="col-6 col-md">
+                <h5>Address</h5>
+                <ul class="list-unstyled text-small">Address- 2nd floor, Prabha Bhawan MNIT Jaipur Campus - 302017
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="server/config.js"></script>
+    <script src="server/register.js"></script>
+    <script src="./server/swal.js"></script>
+</body>
+
+</html>

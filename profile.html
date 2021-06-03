@@ -1,296 +1,275 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <!-- basic -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- mobile metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <!-- site metas -->
-    <title>Dashboard | Detection of Dysgraphia</title>
-    <meta name="keywords" content="Dysgraphia, Detection, Disorder, Diagnosis">
-    <meta name="description" content="Application to detect Dysgraphia">
-    <meta name="author" content="Sanatan Shrivastava">
-    <!-- fevicon -->
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- style css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
-    <!-- Responsive-->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-    <!-- Tweaks for older IEs-->
-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-    <script src="server/db.config.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-    </script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Jumbotron example · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/jumbotron/">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
 
 </head>
-<!-- body -->
 
-<body class="main-layout">
-    <!-- loader  -->
-    <div class="loader_bg">
-        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-    </div>
-    <!-- end loader -->
-
-    <!-- contact -->
-
-    <div id="login_div" class="contact">
-        <header>
-            <!-- header inner -->
-            <div class="header-top">
-                <div class="header">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section">
-                                <div class="full">
-                                    <div class="center-desk">
-                                        <div class="logo">
-                                            <a style="font-family: Poppins; font-size: medium; color: black; text-transform: none; font-weight: 400;" href="index.html">Detection of Dysgraphia</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-10 col-lg-8 col-md-8 col-sm-9">
-                                <div class="menu-area">
-                                    <div class="limit-box">
-                                        <nav class="main-menu ">
-                                            <ul class="menu-area-main">
-                                                <li class="active"> <a href="index.html">Home</a> </li>
-                                                <li> <a href="#about">About</a> </li>
-                                                <li> <a href="#contact">Contact Us</a> </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<body>
+    <div id="login_div">
+        <navbar>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img style="width: 2em;" src="./img/logo.png" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./team.html">Our Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <a style="padding: 0.7em;" class="custom-btn" href="./profile.html">Login</a>
+                        </form>
                     </div>
                 </div>
-            </div>
-        </header>
-        <center>
-            <br>
-            <h4>Authorised Personnel Only</h4>
-            <a href="login.html">
-                <h3 style="text-decoration: underline; color: green;">Login to continue</h3>
-            </a>
-        </center>
-    </div>
-    <!-- end contact -->
-
-
-    <div id="user_div" class="loggedin-div">
-        <header>
-            <!-- header inner -->
-            <div class="header-top">
-                <div class="header">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section">
-                                <div class="full">
-                                    <div class="center-desk">
-                                        <div class="logo">
-                                            <a style="font-family: Poppins; font-size: medium; color: black; text-transform: none; font-weight: 400;" href="index.html">Detection of Dysgraphia</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-10 col-lg-8 col-md-8 col-sm-9">
-                                <div class="menu-area">
-                                    <div class="limit-box">
-                                        <nav class="main-menu ">
-                                            <ul class="menu-area-main">
-                                                <li class="active"> <a href="index.html">Home</a> </li>
-                                                <li> <a href="#about">About</a> </li>
-                                                <li> <a href="#contact">Contact Us</a> </li>
-                                                <li> <a onclick="logout()" href="#contact">Logout</a> </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </nav>
+        </navbar>
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <h1 style="text-align: center;" class="display-5 fw-bold lh-1 mb-3"> Revolutionalizing the Early Diagnosis!
+            </h1> <br>
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1 style="text-align: left;" class="display-5 fw-bold lh-1 mb-3">100% Secure.
+                    </h1>
+                    <h1 style="text-align: left;" class="display-6 fw-bold lh-1 mb-3">
+                        Your data is all that matters to Us.
+                    </h1>
+                    <p style="text-align: justify; font-size: large;">
+                        1. Login with our Application <br> 2. Upload a photo of your handwriting <br> 3. Wait for our Algorithm to analyse your submitted text! <br>
+                    </p>
                 </div>
-            </div>
-        </header>
-        <br />
-        <div class="container">
-            <div class="main-body">
-                <br>
-                <div class="row gutters-sm">
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-flex flex-column align-items-center text-center">
-                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
-                                    <div class="mt-3">
-                                        <h4>John Doe</h4>
-                                        <p class="text-secondary mb-1">Full Stack Developer</p>
-                                        <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
-                                        <div class="text-bg a"><a href="">Change Avatar</a></div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <form class="p-4 p-md-5 border rounded-3 bg-light">
+                        <div class="form-floating mb-3">
+                            <input autocomplete="" type="email" class="form-control" id="login_email" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
                         </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Full Name</h6>
-                                    </div>
-                                    <div class="col-sm-9 text-secondary">
-                                        Kenneth Valdez
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Email</h6>
-                                    </div>
-                                    <div class="col-sm-9 text-secondary">
-                                        fip@jukmuh.al
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Phone</h6>
-                                    </div>
-                                    <div class="col-sm-9 text-secondary">
-                                        (239) 816-9029
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Mobile</h6>
-                                    </div>
-                                    <div class="col-sm-9 text-secondary">
-                                        (320) 380-4539
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Address</h6>
-                                    </div>
-                                    <div class="col-sm-9 text-secondary">
-                                        Bay Area, San Francisco, CA
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="flex-row">
-                                    <div class="col-sm-12 text-bg a">
-                                        <a target="__blank" href="">Edit Profile</a>
-                                        <a target="__blank" href="detect.html">Take the Test</a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="form-floating mb-3">
+                            <input autocomplete="" type="password" class="form-control" id="login_password" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
                         </div>
-                    </div>
-                </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="button" onclick="login()">Login</button>
 
+                        <hr class="my-4">
+                        <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+    <div id="user_div">
+        <navbar>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img style="width: 2em;" src="./img/logo.png" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./team.html">Our Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <a onclick="logout()" class="btn btn-outline-dark">Logout</a>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </navbar>
+        <div class="container py-4">
+            <header class="pb-3 mb-4 border-bottom">
+                <span id="user_name" class="fs-4"></span>
+            </header>
+
+            <div class="p-5 mb-4 bg-light rounded-3">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Your Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Child's Profile</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img class="p-3" src="https://via.placeholder.com/150x150.png" alt="...">
+                                </div>
+                                <div style="line-height: 1em;" class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 id="name" class="card-title">Name Here</h5>
+                                        <span class="d-flex"><strong>Email ID:&nbsp; </strong><p id="email"></p></span>
+                                        <span class="d-flex"><strong>Phone:&nbsp; </strong>
+                                            <p id="phone"></p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img class="p-3" src="https://via.placeholder.com/150x150.png" alt="...">
+                                </div>
+                                <div style="line-height: 1em;" class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 id="child_name" class="card-title">Name Here</h5>
+                                        <span class="d-flex"><strong>DOB:&nbsp; </strong>
+                                            <p id="dob"></p>
+                                        </span>
+                                        <span class="d-flex"><strong>Age:&nbsp; </strong>
+                                            <p id="age"></p>
+                                        </span>
+                                        <span class="d-flex"><strong>Warden's Name:&nbsp; </strong>
+                                            <p id="warden_name"></p>
+                                        </span>
+                                        <span class="d-flex"><strong>Any previous ailments: &nbsp; </strong>
+                                            <p id="prev"></p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
 
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                    <div class="h-100 p-5 text-white bg-dark rounded-3">
+                        <h2 id="change">Change the background</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-light" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Add borders</h2>
+                        <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
+                        </p>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+            </div>
 
-
-
-    <!--  footer -->
-    <!--  footer -->
-    <footer>
-        <div class="footer ">
-            <div class="container">
+            <hr>
+            <footer class="container py-5">
                 <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 ">
-                                <div class="address">
-                                    <h3>Contact Us </h3>
-                                    <ul class="loca">
-                                        <li>
-                                            <a href="#"></a>Detection of Dysgraphia by ML/DL methodologies by IIIT Kota Research Group. </li>
-                                        <li>
-                                            <a href="#"></a>Detection-Dysgraphia </li>
-                                        <li>
-                                            <a href="#"></a>contact@iiitkota.ac.in</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="address">
-                                    <h3>Social Link</h3>
-                                    <ul class="Menu_footer">
-                                        <li class="active"> <a href="#">Twitter</a> </li>
-                                        <li><a href="#">Facebook</a> </li>
-                                        <li><a href="#">Instagram</a> </li>
-                                        <li><a href="#">LinkedIn</a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-
-                            <div class="col-lg-4 col-md-6 col-sm-6 ">
-                                <div class="address">
-                                    <h3>Newsletter</h3>
-                                    <form class="news">
-                                        <input class="newslatter" placeholder="Enter your email" type="text" name=" Enter your email">
-                                        <button class="submit">Subscribe</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                    <div style="text-align: left;" class="col-12 col-md">
+                        <img class="img-fluid" style="max-width: 100px;" src="img/logo.png">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+                        </svg>
+                        <small class="d-block mb-3 text-muted">&copy; 2020–21</small>
                     </div>
-
+                    <div style="text-align: left;" class="col-6 col-md">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="link-secondary" href="https://iiitkota.ac.in">IIIT Kota</a></li>
+                            <li>
+                                <a class="link-secondary" href="https://github.com/Sanatan-Shrivastava/Detect-Dysgraphia"></a>
+                            </li>
+                            <li><a class="link-secondary" href="git">Collaborate on Dataset</a></li>
+                            <li><a class="link-secondary" href="https://github.com/Sanatan-Shrivastava/detection-dysgraphia">Contribute to
+                                    application</a></li>
+                            <li><a class="link-secondary" href="mailto: basant.cse@iiitkota.ac.in">Connect</a></li>
+                        </ul>
+                    </div>
+                    <div style="text-align: left;" class="col-6 col-md">
+                        <h5>Social Links</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="link-secondary" href="#">Twitter</a></li>
+                            <li><a class="link-secondary" href="#">Facebook</a></li>
+                            <li><a class="link-secondary" href="#">Instagram</a></li>
+                            <li><a class="link-secondary" href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div style="text-align: left;" class="col-6 col-md">
+                        <h5>About</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="link-secondary" href="./team.html">Team</a></li>
+                            <li><a class="link-secondary" href="https://github.com/Sanatan-Shrivastava/Detect-Dysgraphia">Github</a></li>
+                            <li><a class="link-secondary" href="#">Privacy</a></li>
+                            <li><a class="link-secondary" href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                    <div style="text-align: left;" class="col-6 col-md">
+                        <h5>Address</h5>
+                        <ul class="list-unstyled text-small">Address- 2nd floor, Prabha Bhawan MNIT Jaipur Campus - 302017
+                        </ul>
+                    </div>
                 </div>
-
-            </div>
-            <div class="copyright">
-                <div class="container">
-                    <p>Copyright © 2020-21 Developed by <a href="#">IIIT Kota Research Group</a></p>
-                </div>
-            </div>
+            </footer>
         </div>
-    </footer>
-    <!-- end footer -->
-    <!-- Javascript files-->
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
-    <script async src="./server/db.config.js"></script>
-    <script async src="./server/index.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    </div>
 
-    <!-- google map js -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script> -->
-    <!-- end google map js -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+    <script src="server/config.js"></script>
+    <script src="server/login.js"></script>
+    <script src="server/profile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
+
 
 </html>
