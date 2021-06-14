@@ -80,7 +80,7 @@
                             <div class="container container--xs">
                                 <div class="woocommerce">
                                     <div>
-                                        <h4 class="mb-0 text-center">Warden's Details</h4>
+                                        <h4 class="mb-0 text-center">Guardian's Details</h4>
                                         <p class="fs-14 text-gray text-center mb-5">Fill your details to get Registered.
                                         </p>
 
@@ -90,23 +90,28 @@
                                             <p class="woocommerce-FormRow woocommerce-FormRow--first form-row form-row-first">
                                                 <label for="reg_sr_firstname">First Name <span
                                                         class="required">*</span></label>
-                                                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_firstname" id="reg_sr_firstname" value="" required="">
-                                                <div class="invalid-feedback">This field is required</div>
+                                                <input onblur="checkUserFirstName()" type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_firstname" id="reg_sr_firstname" value="" required="">
+                                                <small id="userFirstNameError" class="form-text text-danger">This Field
+                                                    must be
+                                                    filled.</small>
                                             </p>
 
                                             <p class="woocommerce-FormRow woocommerce-FormRow--last form-row form-row-last">
                                                 <label for="reg_sr_lastname">Last Name <span
                                                         class="required">*</span></label>
-                                                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_lastname" id="reg_sr_lastname" value="" required="">
-                                                <div class="invalid-feedback">This field is required</div>
+                                                <input onblur="checkUserSurname()" type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_lastname" id="reg_sr_lastname" value="" required="">
+                                                <small id="userSurnameError" class="form-text text-danger">This Field
+                                                    must be
+                                                    filled.</small>
                                             </p>
 
 
                                             <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
                                                 <label for="reg_email">Email address <span
                                                         class="required">*</span></label>
-                                                <input type="email" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="email" id="reg_email" value="" required="">
-                                                <div class="invalid-feedback">This field is required</div>
+                                                <input onblur="checkUserEmail()" type="email" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="email" id="reg_email" value="" required="">
+                                                <small id="userEmailError" class="form-text text-danger">Please check your email
+                                                address.</small>
                                             </p>
 
                                             <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
@@ -121,15 +126,32 @@
                                             <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
                                                 <label for="reg_password">Password <span
                                                         class="required">*</span></label>
-                                                <input type="password" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="password" id="reg_password" required="">
-                                                <div class="invalid-feedback">This field is required</div>
+                                                <input onblur="checkUserPassword()" id="reg_password" type="password" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="password" required="">
+                                                <input onclick="Toggle()" type="checkbox" /> <b>Show
+                                                    Password</b>
+                                                <small id="userPasswordError" class="form-text text-danger">Your
+                                                    password must be
+                                                    uppercase, lowercase and more than 10 characters.</small>
                                             </p>
+                                            <script>
+                                                // Change the type of input to password or text
+                                                function Toggle() {
+                                                    var temp = document.getElementById("reg_password");
+                                                    if (temp.type === "password") {
+                                                        temp.type = "text";
+                                                    } else {
+                                                        temp.type = "password";
+                                                    }
+                                                }
+                                            </script>
 
                                             <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
                                                 <label for="reg_password">Confirm Password <span
                                                         class="required">*</span></label>
-                                                <input type="password" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="password" id="confirm_reg_password" required="">
-                                                <div class="invalid-feedback">This field is required</div>
+                                                <input onblur="checkUserPassword()" type="password" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="password" id="confirm_reg_password" required="">
+                                                <small id="userPasswordConfirmError" class="form-text text-danger">Your
+                                                    password must be
+                                                    uppercase, lowercase and more than 10 characters.</small>
                                             </p>
                                             <!-- Spam Trap -->
                                             <div style="left: -999em; position: absolute;"><label for="trap">Anti-spam</label><input type="text" name="email_2" id="trap" tabindex="-1" autocomplete="off">
@@ -167,35 +189,25 @@
                                             <p class="woocommerce-FormRow woocommerce-FormRow--first form-row form-row-first">
                                                 <label for="reg_child_firstname">First Name <span
                                                         class="required">*</span></label>
-                                                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_firstname" id="reg_child_firstname" value="" required="">
-                                                <div class="invalid-feedback">This field is required</div>
+                                                <input onblur="checkChildFirstName()" type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_firstname" id="reg_child_firstname" value="" required="">
+                                                <small id="userChildFirstNameError" class="form-text text-danger">This Field
+                                                    must be
+                                                    filled.</small>
                                             </p>
 
                                             <p class="woocommerce-FormRow woocommerce-FormRow--last form-row form-row-last">
                                                 <label for="reg_child_lastname">Last Name <span
                                                         class="required">*</span></label>
-                                                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_lastname" id="reg_child_lastname" value="" required="">
-                                                <div class="invalid-feedback">This field is required</div>
+                                                <input onblur="checkChildLastName()" type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_lastname" id="reg_child_lastname" value="" required="">
+                                                <small id="userChildLastNameError" class="form-text text-danger">This Field
+                                                    must be
+                                                    filled.</small>
                                             </p>
 
                                             <p class="woocommerce-FormRow woocommerce-FormRow--first form-row form-row-first">
                                                 <label for="reg_child_firstname">Date Of Birth (DOB)<span
                                                         class="required">*</span></label>
                                                 <input type="date" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_firstname" id="reg_child_dob" value="" required="">
-                                                <div class="invalid-feedback">This field is required</div>
-                                            </p>
-
-                                            <p class="woocommerce-FormRow woocommerce-FormRow--last form-row form-row-last">
-                                                <label for="reg_child_lastname">Ward's Age<span
-                                                        class="required">*</span></label>
-                                                <input type="number" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_lastname" id="reg_child_age" value="" required="">
-                                                <div class="invalid-feedback">This field is required</div>
-                                            </p>
-
-                                            <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                                                <label for="reg_child_lastname">Does your child suffer from any previous ailments? <br> If yes, let us know. <span
-                                                        class="required">*</span></label>
-                                                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_lastname" id="reg_child_ailment" value="" required="">
                                                 <div class="invalid-feedback">This field is required</div>
                                             </p>
 

@@ -24,7 +24,6 @@ firebase.auth().onAuthStateChanged(function (user) {
                 phone = user.phone;
                 age = user.age;
                 dob = user.dob;
-                prev = user.history;
                 document.getElementById(
                   "user_name"
                 ).innerHTML = `<p>Hey, welcome to the dashboard, ${first_name}! </p> `;
