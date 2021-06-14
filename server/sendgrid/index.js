@@ -22,8 +22,8 @@ exports.sendWelcomeMail = functions.database
 
     const msg = {
       to: user.email,
-      from: "team@flairfiesta.in",
-      subject: `Thanks for registering in FlairFiesta`,
+      from: "team@detect-dysgraphia.ml",
+      subject: `Welcome to Our Group! - IIIT Kota Research Team!`,
 
       text: `Hi ${userName},
         We're so glad, you registered with us.
